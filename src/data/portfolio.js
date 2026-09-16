@@ -1,4 +1,7 @@
 import portraitImage from '../images/zjz1.jpg';
+import summerImage from '../images/img01.jpg';
+import danzhengVideo from '../images/丹正-web.mp4';
+import forestVideo from '../images/背包里的小森林-web.mp4';
 
 export const portfolioData = {
   profile: {
@@ -106,7 +109,7 @@ export const portfolioData = {
         },
         {
           type: 'video',
-          src: '/src/images/丹正-web.mp4',
+          src: danzhengVideo,
           poster: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80'
         },
         {
@@ -126,7 +129,7 @@ export const portfolioData = {
       media: [
         {
           type: 'image',
-          src: '/src/images/img01.jpg',
+          src: summerImage,
           alt: '夏日电影氛围片段'
         }
       ]
@@ -141,7 +144,7 @@ export const portfolioData = {
       media: [
         {
             type: 'video',
-            src: '/src/images/背包里的小森林-web.mp4'
+            src: forestVideo
         },
         {
           type: 'audio',
