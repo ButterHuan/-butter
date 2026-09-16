@@ -88,6 +88,14 @@ const renderProjectMedia = (mediaItem) => {
     `;
   }
 
+  if (mediaItem.type === 'link') {
+    return `
+      <div class="media-frame media-link">
+        <a href="${mediaItem.href}" target="_blank" rel="noreferrer">${mediaItem.label || mediaItem.href}</a>
+      </div>
+    `;
+  }
+
   return `
     <div class="media-frame media-audio">
       <span class="audio-label">${mediaItem.label || '音频片段'}</span>
@@ -106,7 +114,7 @@ const renderProjects = (items) =>
             <a href="${project.link}" aria-label="查看 ${project.title}">View</a>
           </div>
           <h3>${project.title}</h3>
-          <p>${project.description}</p>
+          ${project.description ? `<p>${project.description}</p>` : ''}
           <div class="project-media">
             ${(project.media || []).slice(0, 2).map((mediaItem) => renderProjectMedia(mediaItem)).join('')}
           </div>
@@ -242,7 +250,7 @@ app.innerHTML = `
           </div>
           <div class="contact-card">
             <span class="mini-label">GitHub</span>
-            ${renderContactValue('GitHub', contact.github)}
+            ${renderContactValue('地区', contact.github)}
           </div>
           <div class="contact-card">
             <span class="mini-label">Dribbble</span>

@@ -1,3 +1,5 @@
+import portraitImage from '../images/zjz1.jpg';
+
 export const portfolioData = {
   profile: {
     name: '宦银',
@@ -5,10 +7,10 @@ export const portfolioData = {
     subtitle: '用声音、影像与传播连接人、内容与文化',
     location: '香港',
     email: 'Wanjin_Huan@outlook.com',
-    phone: '13986310698',
+    phone: '40930061',
     bio: '我是一名热爱声音与影像创作的艺术科技方向学生，专注于录音、声音设计、传播与新媒体内容表达。具备影视声音、音频后期、短剧项目管理、社媒运营等综合能力，能够从创意策划到执行落地整合内容与技术，持续探索艺术与科技结合的创新实践。',
     avatar: 'HY',
-    portrait: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80',
+    portrait: portraitImage,
     tags: ['录音艺术', '声音设计', '新媒体运营', '艺术科技']
   },
   highlights: [
@@ -87,25 +89,24 @@ export const portfolioData = {
     '公众号运营',
     '文案策划',
     '内容传播',
-    '英语 CET6'
   ],
   projects: [
     {
-      title: '《悠长夏日》',
+      title: '纪录片创作',
       type: '剧情短片 / 声音指导',
-      description: '参与剧情短片声音设计与制作，负责整体音频氛围营造和情感表达，强化叙事节奏与人物感受。',
+      description: '根据青海湖拍摄地与人物氛围进行现场声音方案设计，独立策划并执行同期录音，同时参与后期声音调整。',
       features: ['声音氛围设计', '情感叙事', '后期制作'],
       tech: ['Protools', 'Logic Pro', '声音设计'],
       link: '#',
       media: [
         {
-          type: 'image',
-          src: 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80',
-          alt: '夏日电影氛围片段'
+          type: 'link',
+          href: 'http://localhost:8877/video.mp4',
+          label: '打开视频链接'
         },
         {
           type: 'video',
-          src: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+          src: '/src/images/丹正-web.mp4',
           poster: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80'
         },
         {
@@ -125,23 +126,22 @@ export const portfolioData = {
       media: [
         {
           type: 'image',
-          src: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80',
-          alt: '广告片拍摄镜头'
+          src: '/src/images/img01.jpg',
+          alt: '夏日电影氛围片段'
         }
       ]
     },
     {
-      title: '《华彩追月夜》——丹正母子篇',
+      title: '广告声音制作',
       type: '纪录片 / 录音师',
-      description: '根据青海湖拍摄地与人物氛围进行现场声音方案设计，独立策划并执行同期录音，同时参与后期声音调整。',
+      description: '',
       features: ['现场录音', '环境声设计', '导演配合'],
       tech: ['录音设备', '声音后期', '现场制作'],
       link: '#',
       media: [
         {
-          type: 'image',
-          src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80',
-          alt: '自然环境与人物故事场景'
+            type: 'video',
+            src: '/src/images/背包里的小森林-web.mp4'
         },
         {
           type: 'audio',
@@ -167,8 +167,8 @@ export const portfolioData = {
   ],
   contact: {
     email: 'Wanjin_Huan@outlook.com',
-    github: '暂无',
-    dribbble: '暂无',
+    github: '香港',
+    dribbble: '40930061',
     wechat: '13986310698'
   }
 };
